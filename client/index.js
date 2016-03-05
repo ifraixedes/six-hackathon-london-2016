@@ -5,10 +5,9 @@ import { Provider } from 'react-redux'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-// import App from './containers/App'
 import configure from './store'
 
-import PortfolioChart from './components/PortfolioChart'
+import GBApp from './containers/GBApp'
 
 const store = configure()
 const history = syncHistoryWithStore(browserHistory, store)
@@ -16,9 +15,10 @@ const history = syncHistoryWithStore(browserHistory, store)
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={PortfolioChart}>
+      <Route path="/" component={GBApp}>
       </Route>
     </Router>
   </Provider>,
-  document.getElementById('PortfolioChart')
+  document.getElementById('GeoBench')
 )
+

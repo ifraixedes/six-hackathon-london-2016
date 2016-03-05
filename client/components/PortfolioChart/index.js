@@ -11,7 +11,7 @@ let pieData = [
 class PortfolioChart extends Component {
   render() {
     return <PieChart
-      data={pieData}
+      data={this.props.stocks}
       width={400}
       height={400}
       radius={100}
