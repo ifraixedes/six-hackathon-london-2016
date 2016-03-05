@@ -12,10 +12,10 @@ class PortfolioChart extends Component {
   render() {
     return <PieChart
       data={this.props.stocks}
-      width={400}
+      width={700}
       height={400}
-      radius={100}
-      innerRadius={20}
+      radius={150}
+      innerRadius={10}
       title="Your Portfolio at a Glance" />
   }
 }

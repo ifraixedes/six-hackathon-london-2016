@@ -23,15 +23,20 @@ class StockSearch extends Component {
   }
 
   render() {
-    return <Autocomplete
-      ref="autcomplete"
-      items={ this.state.stocksList }
-      getItemValue={ (item) => `${item.symbol} ${item.name}` }
-      onSelect={ (value, item) => this.updatePortfolio(item) }
-      onChange={ (event, value) => this.getStocks(value) }
-      renderItem={ (item, isHighlighted) => (
-        <div>{ item.symbol } - { item.name }</div>
-      )}/>
+    return <div className='stockSearch'>
+      <Autocomplete
+        ref="autcomplete"
+        items={ this.state.stocksList }
+        getItemValue={ (item) => `${item.symbol} ${item.name}` }
+        onSelect={ (value, item) => {
+            this.updatePortfolio(item)
+          }
+        }
+        onChange={ (event, value) => this.getStocks(value) }
+        renderItem={ (item, isHighlighted) => (
+          <div>{ item.symbol } - { item.name }</div>
+        )}/>
+      </div>
   }
 }
 

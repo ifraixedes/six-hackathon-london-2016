@@ -15,7 +15,7 @@ export default handleActions({
     vals = state.map(s => {
       return {
         label: s.label,
-        value: s.value / total * 100
+        value: Math.round(s.value / total * 100)
       }
     })
 
@@ -25,7 +25,7 @@ export default handleActions({
 
     vals.push({
       label: action.payload.name,
-      value: val / total * 100
+      value: Math.round(val / total * 100)
     })
 
     return vals
