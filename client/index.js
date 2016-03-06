@@ -4,10 +4,9 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import { Provider } from 'react-redux'
 import ReactDOM from 'react-dom'
 import React from 'react'
-
 import configure from './store'
-
 import GBApp from './containers/GBApp'
+import GoogleData from './components/GoogleData'
 
 const store = configure()
 const history = syncHistoryWithStore(browserHistory, store)
@@ -22,3 +21,8 @@ ReactDOM.render(
   document.getElementById('GeoBench')
 )
 
+
+ReactDOM.render(
+  <GoogleData/>,
+  document.getElementById('GoogleData')
+)
