@@ -7,6 +7,8 @@ import React from 'react'
 import configure from './store'
 import GBApp from './containers/GBApp'
 import GoogleData from './components/GoogleData'
+import GoldData from './components/GoldData'
+import SilverData from './components/SilverData'
 
 const store = configure()
 const history = syncHistoryWithStore(browserHistory, store)
@@ -25,4 +27,14 @@ ReactDOM.render(
 ReactDOM.render(
   <GoogleData/>,
   document.getElementById('GoogleData')
+)
+
+ReactDOM.render(
+  <GoldData/>,
+  document.getElementById('GoldData')
+)
+
+ReactDOM.render(
+  <SilverData/>,
+  document.getElementById('SilverData')
 )
