@@ -1,7 +1,8 @@
 
-# Frontend Boilerplate
+# Geo Benc
 
-A boilerplate of things that mostly shouldn't exist.
+Visualises the impact of Wold events on the your investment Portfolio
+
 
 ## Contains
 
@@ -15,8 +16,6 @@ A boilerplate of things that mostly shouldn't exist.
 - [x] [Rucksack](http://simplaio.github.io/rucksack/docs)
 - [x] [React Router Redux](https://github.com/reactjs/react-router-redux)
 - [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
-- [ ] Redux effects
-- [x] TodoMVC example
 
 ## Setup
 
@@ -35,10 +34,6 @@ $ npm start
 ```
 $ npm run build
 ```
-
-## Note
-
-This is just my personal boilerplate, it may or may not be a good fit for your project(s).
 
 # License
 
